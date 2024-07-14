@@ -35,6 +35,30 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+## Docker
+
+Follow these steps to build and run the Docker container for this project.
+
+### Build the Docker Image
+
+Run the following command in the root directory of the source code to build the Docker image:
+
+```sh
+docker build . -t [your-image-name:tag]
+```
+
+### Run the Docker Container
+
+After the build is complete, use the following command to start the service:
+
+```sh
+docker run -p 3000:3000 --rm [your-image-name:tag]
+```
+
+### Access the Project
+
+Open your browser and navigate to http://localhost:3000 to access the project.
+
 ## Resources
 
 - https://infosecinnovations.github.io/project-fantastic/2020/12/18/introduction-to-jsplumb.html
